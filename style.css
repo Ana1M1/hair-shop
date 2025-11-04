@@ -92,4 +92,63 @@ a {
 
 #produse {
     height: 100vh;
+    text-align: center;
+}
+
+ .produse .product {
+  display: grid;
+  grid-auto-flow: column;               /* umple coloanele de sus în jos */
+  grid-template-rows: repeat(2, auto);  /* fix 2 rânduri */
+  gap: 40px;                            /* spațiu între produse */
+  align-content: center;                /* centrează rândurile vertical în container */
+  justify-content: center;              /* centrează coloanele dacă spațiul e mai mare */
+  justify-items: center;                /* centrează fiecare element în celula sa */
+  padding: 8px 0;
+  overflow-x: auto;                     /* scroll orizontal dacă sunt prea multe coloane */
+}
+
+.produse .product img {
+  width: 440px;        /* suprascrie selectorul global img */
+  height: 440px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.intro {
+  text-align: center;
+  margin: 24px 0;
+}
+.intro h2 {
+  margin-bottom: 8px;
+}
+.intro p {
+  margin: 4px 0;
+}
+
+.produse h2 {
+  text-align: center;
+  margin: 16px 0;
+  font-size: 2em; /* ajustează după preferință */
+}
+
+.produse .product {
+  display: grid;
+  grid-auto-flow: column;               /* umple coloanele de sus în jos */
+  grid-template-rows: repeat(3, auto);  /* fix 3 rânduri */
+  gap: 40px;                            /* spațiu între produse */
+  align-content: center;                /* centrează rândurile vertical în container */
+  justify-content: center;              /* centrează coloanele dacă spațiul e mai mare */
+  justify-items: center;                /* centrează fiecare element în celula sa */
+  padding: 8px 0;
+  overflow-x: auto;                     /* scroll orizontal dacă sunt prea multe coloane */
+  -webkit-overflow-scrolling: touch;
+}
+
+.produse .product img {
+  width: 440px;        /* ajustează după nevoie pentru a încăpea 3 rânduri */
+  height: 440px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
 }
