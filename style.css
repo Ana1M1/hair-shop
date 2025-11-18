@@ -151,7 +151,7 @@ a {
   justify-items: center;                /* centrează fiecare element în celula sa */
   padding: 8px 0;
   overflow-x: auto;                     /* scroll orizontal dacă sunt prea multe coloane */
-  -webkit-overflow-scrolling: touch;
+  
 }
 
 .produse .product img {
@@ -160,4 +160,19 @@ a {
   object-fit: cover;
   border-radius: 6px;
   display: block;
+}
+
+.site-footer {
+    background-color: #d7badb;
+    left: 0;
+    right: 0;
+    height: 0px;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
 }
