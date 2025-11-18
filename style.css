@@ -43,6 +43,15 @@ body{
     background: linear-gradient(to bottom right, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
 }
 
+.contact-info {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
 .hero-text {
     position: absolute;
     top: 50%;
