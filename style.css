@@ -162,6 +162,21 @@ a {
   display: block;
 }
 
+.product-card {
+    border-radius: 8px;
+    background-color: #c997c0;
+    
+}
+
+.price {
+    background: rgb(170, 94, 166);
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
 .site-footer {
     background-color: #d7badb;
     left: 0;
