@@ -191,3 +191,9 @@ a {
     bottom: 0;
     width: 100%;
 }
+
+#theme-button {
+  position: fixed;
+  right: 30px;
+  bottom: 3px;
+}
