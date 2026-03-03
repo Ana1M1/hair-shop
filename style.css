@@ -100,7 +100,7 @@ a {
 }
 
 #produse {
-    height: 100vh;
+    
     text-align: center;
 }
 
@@ -199,4 +199,27 @@ a {
   position: fixed;
   right: 30px;
   bottom: 3px;
+}
+
+#product-suggest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#product-suggest div {
+  display: flex;
+  gap: 20px;
+}
+
+#desired-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#product-name,#dog-image,#cb{
+    border-radius: 12px;
 }
