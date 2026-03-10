@@ -141,13 +141,14 @@ a {
 }
 
 .produse .product {
-  display: grid;
-  grid-auto-flow: column;               /* umple coloanele de sus în jos */
-  grid-template-rows: repeat(3, auto);  /* fix 3 rânduri */
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 99%;
   gap: 40px;                            /* spațiu între produse */
   align-content: center;                /* centrează rândurile vertical în container */
   justify-content: center;              /* centrează coloanele dacă spațiul e mai mare */
-  justify-items: center;                /* centrează fiecare element în celula sa */
+  justify-items: center; 
+  align-items: center;               /* centrează fiecare element în celula sa */
   padding: 8px 0;
   overflow-x: auto;                     /* scroll orizontal dacă sunt prea multe coloane */
   
