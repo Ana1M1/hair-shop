@@ -74,7 +74,7 @@ body{
 }
 
 .btn-hero {
-    background-color: #9c5bd8;
+    background-color: #9f7cc2;
     color: white;
     padding: 12px 28px;
     border-radius: 25px;
@@ -100,7 +100,6 @@ a {
 }
 
 #produse {
-    height: 100vh;
     text-align: center;
 }
 
@@ -199,4 +198,24 @@ a {
   position: fixed;
   right: 30px;
   bottom: 3px;
+}
+
+.suggest-product{
+    background:rgb(213, 181, 241);
+    padding:20px;
+    width:300px;
+    margin:20px auto;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    border-radius:10px;
+}
+ 
+.suggest-product input{
+    padding:5px;
+}
+
+.suggest-product button{
+    padding:8px;
+    cursor:pointer;
 }

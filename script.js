@@ -32,3 +32,38 @@ themeButton.addEventListener("click", function (){
     themeButton.innerText = "🌑"
   }
 })
+const addButton = document.getElementById("add-product");
+
+addButton.addEventListener("click", function(){
+
+const name = document.getElementById("product-name").value;
+const image = document.getElementById("product-image").value;
+const text = document.getElementById("product-text").value;
+const price = document.getElementById("product-price").value;
+
+const productContainer = document.querySelector(".product");
+
+const card = document.createElement("div");
+card.classList.add("product-card");
+
+const img = document.createElement("img");
+img.src = image;
+
+const title = document.createElement("h3");
+title.innerText = name;
+
+const desc = document.createElement("p");
+desc.innerText = text;
+
+const pret = document.createElement("p");
+pret.classList.add("price");
+pret.innerText = price;
+
+card.appendChild(img);
+card.appendChild(title);
+card.appendChild(desc);
+card.appendChild(pret);
+
+productContainer.appendChild(card);
+
+});
