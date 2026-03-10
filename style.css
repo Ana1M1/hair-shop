@@ -74,7 +74,7 @@ body{
 }
 
 .btn-hero {
-    background-color: #9c5bd8;
+    background-color: #9f7cc2;
     color: white;
     padding: 12px 28px;
     border-radius: 25px;
@@ -100,7 +100,6 @@ a {
 }
 
 #produse {
-    height: 100vh;
     text-align: center;
 }
 
@@ -117,7 +116,7 @@ a {
 }
 
 .produse .product img {
-  width: 440px;        /* suprascrie selectorul global img */
+  width: 50px;        
   height: 440px;
   object-fit: cover;
   border-radius: 6px;
@@ -142,13 +141,14 @@ a {
 }
 
 .produse .product {
-  display: grid;
-  grid-auto-flow: column;               /* umple coloanele de sus în jos */
-  grid-template-rows: repeat(3, auto);  /* fix 3 rânduri */
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 99%;
   gap: 40px;                            /* spațiu între produse */
   align-content: center;                /* centrează rândurile vertical în container */
   justify-content: center;              /* centrează coloanele dacă spațiul e mai mare */
-  justify-items: center;                /* centrează fiecare element în celula sa */
+  justify-items: center; 
+  align-items: center;               /* centrează fiecare element în celula sa */
   padding: 8px 0;
   overflow-x: auto;                     /* scroll orizontal dacă sunt prea multe coloane */
   
@@ -165,7 +165,10 @@ a {
 .product-card {
     border-radius: 8px;
     background-color: #c997c0;
-    
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .price {
@@ -196,4 +199,24 @@ a {
   position: fixed;
   right: 30px;
   bottom: 3px;
+}
+
+.suggest-product{
+    background:rgb(213, 181, 241);
+    padding:20px;
+    width:300px;
+    margin:20px auto;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    border-radius:10px;
+}
+ 
+.suggest-product input{
+    padding:5px;
+}
+
+.suggest-product button{
+    padding:8px;
+    cursor:pointer;
 }
