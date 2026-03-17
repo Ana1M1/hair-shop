@@ -220,3 +220,37 @@ a {
     padding:8px;
     cursor:pointer;
 }
+
+#add-product, #delete-products {
+    background-color: #9f7cc2;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+#add-product:hover, #delete-products:hover {
+    background-color: #bc92f3;
+    transform: scale(1.05);
+}
+#delete-products {
+    background-color: #9f7cc2;  /* aceeași culoare ca Adaugă produs */
+    color: white;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#delete-products:hover {
+    background-color: #bc92f3;
+    transform: scale(1.05);
+}
