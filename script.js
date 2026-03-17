@@ -57,6 +57,8 @@ function createProductCard(product) {
   card.appendChild(desc);
   card.appendChild(pret);
 
+  card.classList.add("product-card", "user-product"); // foarte important
+
   productContainer.appendChild(card);
 }
 
@@ -94,4 +96,17 @@ addButton.addEventListener("click", function () {
   document.getElementById("product-text").value = "";
   document.getElementById("product-price").value = "";
 
+});
+
+const deleteBtn = document.getElementById("delete-products");
+
+deleteBtn.addEventListener("click", function() {
+  localStorage.setItem("products", "[]");
+
+    // Selectăm toate produsele adăugate de utilizator
+    const userProducts = document.querySelectorAll(".user-product");
+
+    userProducts.forEach(product => {
+        product.remove(); // Șterge complet produsul
+    });
 });
